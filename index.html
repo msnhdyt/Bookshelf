@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main>
+        <div id="main">
+            <form action="#" class="form flex-item" id="main-form">
+                <h2>Masukkan Buku Baru</h2>
+                <div class="form-group">
+                    <label for="judul">Judul</label>
+                    <input type="text" id="judul" name="judul" required>
+                </div>
+                <div class="form-group">
+                    <label for="penulis">Penulis</label>
+                    <input type="text" id="penulis" name="penulis" required>
+                </div>
+                <div class="form-group">
+                    <label for="tahun">Tahun</label>
+                    <input type="number" id="tahun" name="tahun" required>
+                </div>
+                <div>
+                    <label for="completed-checkbox">Selesai dibaca</label>
+                    <input type="checkbox" id="completed-checkbox" name="completed-checkbox">
+                </div>
+                <button type="submit" class="submit-button">Tambahkan buku</button>
+            </form>
+            <div class="book-list flex-item">
+                <div id="uncomplete">
+                    <button class="remove-all">hapus semua</button>
+                    <h2>Belum selesai dibaca</h2>
+                </div>
+                <div id="completed">
+                    <button class="remove-all">hapus semua</button>
+                    <h2>Selesai dibaca</h2>
+                </div>
+            </div>                
+        </div>
+        <aside id="search">
+            <h3>Cari buku</h3>
+            <form action="#" class="form" id="search-form">
+                <div>
+                    <label for="search-judul">Judul</label>
+                    <input type="text" id="search-judul" name="search-judul">
+                    <button type="submit" class="search-button">Cari</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&#128522;</p>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

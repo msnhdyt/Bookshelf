@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
+}
+h1{
+    margin: 0;
+    color: blue;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 400px;
+}
+
+.flex-item{
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+#main-form{
+    margin: 0 20px;
+}
+
+.book-list{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 60%;
+    height: 500px;
+    background-color: whitesmoke;
+    margin-right: 20px;
+    min-width: 560px;
+}
+
+#uncomplete, #completed{
+    border: 1px solid blue;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 20px;
+    flex-basis: 50%;
+    background-color: white;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+
+    overflow: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font-family: Raleway;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+aside{
+    margin: 0 20px;
+    position: relative;
+    top: 30px;
+}
+
+#search-judul{
+    font-family: Raleway;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+footer{
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+}
+
+.submit-button{
+    font-family: Quicksand;
+    border-radius: 16px;
+    border:2px solid blue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    color: white;
+    background-color: blue;
+}
+
+.book{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.book h4, p{
+    margin: 0;
+}
+
+.completedButton{
+    background-color: green;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.uncompletedButton{
+    background-color: green;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.removeButton{
+    background-color: red;
+    float: right;
+    background: url("../assets/trash-outline.svg");
+    border: none;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+.removeButton:hover{
+    background: url("../assets/trash-fill.svg");
+}
+
+.remove-all{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    h1{
+        text-align: center;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    .book-list{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        height: none;
+        min-width: min-content;
+        min-height: 600px;
+    }
+    aside{
+        position: relative;
+        top: 570px;
+    }
+    footer{
+        position: relative;
+        top: 570px;
+    }
+}
